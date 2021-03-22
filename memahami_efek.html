@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Memahami Event </title>
+    <script src="jquery.js"></script> <!-- memanggil jQuery -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      //function ready pada dokumen dengan jQuery
+      setTimeout(function() {
+        $("#kotak").fadeOut("slow",function() {
+        //fadeout pada id kotak
+        $("#kotak").remove();
+        //remove pada id kotak
+      });
+    }, 3000); //memberi waktu 3 detik
+      });
+    </script>
+    <style>
+      #kotak { /*memberikan style pada id kotak*/
+        width: 300px;
+        height: 65px;
+        background: lightyellow;
+        border: 1px solid black; /*setting ketebalan border*/
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="kotak"> <!--menuliskan kalimat dengan id kotak-->
+      Perhatikan baik-baik teks ini, karena teks akan hilang dalam hitungan 3 detik
+    </h3>
+  </body>
+</html>

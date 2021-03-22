@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Selector ID </title>
+    <script src="jQuery.js"></script> <!-- import jQuery -->
+    <script type="text/javascript">
+      $(document).ready(function(){ // mengirimkan function ready pada dokumen dengan jquery
+      $("#daftar").addClass("merahkuning");
+      $(".subdaftar").addClass("kuninghitam");});
+    </script>
+    <style type="text/css">
+      .merahkuning { /*memberikan style pada elemen terpilih*/
+      color: orange; /*warna menjadi oranye*/
+      font-weight: bold; /*font menjadi bold*/
+      background-color: yellow; /*warna bg menjadi kuning*/
+      padding: 3px;
+      }
+      .kuninghitam { /*memberi style*/
+      color: blue; /*warna menjadi biru*/
+      background-color: green; /*background menjadi hijau*/
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>paragraf pertama</p> <!--membuat paragraf -->
+    </div>
+    <div>
+      <ul id="daftar"> <!--pembuatan list dengan id-->
+        <li>item 1</li>
+        <li class="subdaftar">item 2</li>
+        <li>item 3</li> 
+      </ul>
+    </div>
+  </body>
+</html>

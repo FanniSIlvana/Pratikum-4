@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Memahami Event </title>
+    <script src="jQuery.js"></script> <!--memanggil jQuery-->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      //baris jQuery akan dijalankan
+      $("a").click(function(){
+      //function click pada tag a dengan jQuery
+        alert("selamat datang di website facebook"); //menampilkan kalimat pop up browser
+      });
+      });
+    </script>
+  </head>
+  <body>
+    <a href="http://facebook.com"> <!-- link tujuan pada kalimat -->
+      klik disini untuk membuka website facebook</a> <!-- menuliskan kalimat -->
+  </body>
+</html>

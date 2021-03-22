@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Button</title>
+    <script src="jQuery.js"></script> <!-- memanggil jQuery-->
+    <script type="text/javascript">
+      $(document).ready(function(){ // baris query akan menjalankan fungsi
+        $(".button1").click(function(){
+          $("div").fadeOut(); //menampilkan efek fade out
+        });
+        $(".button2").click(function(){
+          $("div").fadeIn();//menampilkan efek fade in
+        });
+        $(".button3").click(function(){
+          $("div").fadeTo(1000, 0.3);//menampilkan efek fade opacity 0.3
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="button1">Fade out</button> <!--membuat button1-->
+    <button class="button2">Fade in</button> <!--membuat button2-->
+    <button class="button3">Fade to 0.3</button> <!--membuat button3-->
+    <div>
+      <button style="padding: 60px; margin: 20px; background-color: yellow"></button>
+      <!--design style button-->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Tugas Satu </title>
+    <script src="jQuery.js"></script> <!-- memanggil jQuery -->
+    <script type="text/javascript">
+      $(document).ready(function(){ //fungsi dari jQuery
+      $(".sembunyi").click(function() {$("#5sos").hide("slow") });//fungsi click pada class sembunyi dan id foto dengan jQuery
+      $(".tampil").click(function() {$("#5sos").show("slow") });  //fungsi click pada class tampil serta id foto dengan jQuery
+      $(".sembunyi1").click(function() {$("#5sos1").hide("slow") });//fungsi click pada class sembunyi serta id foto dengan jQuery
+      $(".tampil1").click(function() {$("#5sos1").show("slow") });//fungsi click pada class tampil serta id foto dengan jQuery
+    });
+  </script>
+  </head>
+  <body>
+    <div>
+    <button class="sembunyi">sembunyikan</button> <!-- tombol untuk sembunyi -->
+    <button class="tampil">tampilkan</button> <!-- tombol untuk tampil -->
+    <p><img id="5sos" src="5sos.jpg" style="width:200px" height:"200px"></p><!-- menampilkan gambar dengan style inline -->
+    </div>
+    <div>
+    <button class="sembunyi1">sembunyikan</button> <!-- membuat tombol sembunyi -->
+    <button class="tampil1">tampilkan</button> <!-- membuat tombol tampil -->
+    <p><img id="5sos1" src="5sos1.jpg" style="width:200px" height:"200px"></p>
+    <!--menampilkan gambar dengan-->
+    </div>
+</body>
+</html>

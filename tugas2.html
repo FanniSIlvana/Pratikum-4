@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FormButton</title>
+  </head>
+  <body>
+  <script language="Javascript">
+    function ubahWarnaLB() { //fungsi ubah warna
+      document.getElementById("tombol1").style.background="red";
+    }
+    function ubahWarnaLD() { //fungsi ubahWarna
+      document.getElementById("tombol2").style.background="purple";
+    }
+    function ubahWarnaLD() { //fungsi ubah warna
+      document.getElementById("tombol3").style.background="purple";
+    }  function ubahWarnaLB() { //fungsi ubah warna
+        document.getElementById("tombol4").style.background="red";
+      }
+  </script>
+  <h1>Click 2x disetiap kotak untuk mengubah warnanya</h1> <!-- kalimat yang muncul -->
+  <form> <!-- membuat form -->
+    <input type="button" id="tombol1" value="" style="padding: 30px; margin: 10px;
+            background-color: yellow" ondblclick="ubahWarnaLB()">
+             <!-- membuat button ketika di double click memanggil id kotak merah-->
+    <input type="button" id="tombol2" value="" style="padding: 30px; margin: 10px;
+            background-color: yellow" ondblclick="ubahWarnaLD()">
+             <!-- membuat button ketika di double click memanggil id kotak merah-->
+    <input type="button" id="tombol3" value="" style="padding: 30px; margin: 10px;
+            background-color: yellow" ondblclick="ubahWarnaLD()">
+             <!-- membuat button ketika di double click memanggil id kotak merah-->
+    <input type="button" id="tombol4" value="" style="padding: 30px; margin: 10px;
+            background-color: yellow" ondblclick="ubahWarnaLB()">
+             <!-- membuat button ketika di double click memanggil id kotak merah-->
+  </form>
+  </body>
+</html>
